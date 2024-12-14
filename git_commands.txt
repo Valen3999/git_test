@@ -1,0 +1,76 @@
+Lecture 1 Summary: Git, GitHub, and Version Control
+Introduction
+In this lecture, we explore Git and GitHub, crucial tools for version control in web development. These tools help manage changes, collaboration, and track project evolution efficiently.
+
+Git
+Git is a command-line tool for version control that:
+
+Tracks changes in code, allowing you to save snapshots of your work.
+Syncs code between collaborators, ensuring everyone works with the same files.
+Enables branching to test new features or code without affecting the main project.
+Allows reverting to earlier versions if needed.
+Key concept: A Git repository is where project files are stored, either locally (on your computer) or remotely (on GitHub).
+
+GitHub
+GitHub is an online platform for storing Git repositories, facilitating collaboration and providing features like:
+
+Repository creation: Stores projects and tracks changes.
+Forking: Allows users to create a copy of a project to modify independently.
+Pull Requests: Enables suggesting changes to a project, often used in open-source contributions.
+GitHub Pages: Lets users publish static websites directly from a GitHub repository.
+Commits
+A commit is a saved snapshot of your project at a certain point. After making changes to a file:
+
+Run git add <file> to stage the file (or git add . for all files).
+Run git commit -m "message" to save changes with a description.
+Use git push to send commits to a remote repository.
+If there are new changes on GitHub, first run git pull to sync.
+Merge Conflicts
+When collaborating, multiple people might edit the same file, leading to merge conflicts. Git marks conflicting sections, and users must resolve the differences manually.
+
+Branching
+Branches allow development on a separate version of your project without affecting the main branch (often master). After testing, you can merge the branches together.
+
+git branch: Shows your current branch.
+git checkout -b <branch name>: Creates and switches to a new branch.
+git merge <branch name>: Merges a branch into the current one.
+More GitHub Features
+Forking: Copies another person’s repository to work on independently.
+Pull Requests: Propose changes to the original repository after forking.
+GitHub Pages: Publish static websites directly from GitHub.
+Essential Git Commands:
+git init
+Initializes a new Git repository.
+
+git clone <url>
+Clones a remote repository to your local machine.
+
+git add <file> / git add .
+Stages changes for the next commit (use . for all files).
+
+git commit -m "message"
+Creates a commit with a message describing your changes.
+
+git push
+Pushes committed changes to the remote repository.
+
+git pull
+Fetches and merges changes from the remote repository to your local copy.
+
+git status
+Displays the status of the repository and staged files.
+
+git branch
+Lists all branches and shows which one you are on.
+
+git checkout -b <branch>
+Creates and switches to a new branch.
+
+git merge <branch>
+Merges changes from another branch into the current branch.
+
+git log
+Shows a history of commits in the repository.
+
+git reset --hard <commit>
+Resets your project to a previous commit (useful for undoing mistakes).
